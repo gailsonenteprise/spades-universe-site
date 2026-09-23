@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Spades Universe</title>
+  <desc id="desc">A gold spade and crown on a deep green field.</desc>
+  <defs>
+    <linearGradient id="bg" x1="64" y1="28" x2="448" y2="484" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#125844"/>
+      <stop offset="1" stop-color="#041d18"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="164" y1="104" x2="348" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff1a8"/>
+      <stop offset=".48" stop-color="#e5bb4d"/>
+      <stop offset="1" stop-color="#9a6719"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000" flood-opacity=".38"/>
+    </filter>
+  </defs>
+  <rect x="18" y="18" width="476" height="476" rx="108" fill="url(#bg)"/>
+  <rect x="29" y="29" width="454" height="454" rx="98" fill="none" stroke="#d8aa3f" stroke-width="7" opacity=".7"/>
+  <g filter="url(#shadow)">
+    <path d="M256 89c-34 57-137 128-137 210 0 47 35 81 79 81 22 0 41-8 58-25-4 38-16 58-53 73h106c-37-15-49-35-53-73 17 17 36 25 58 25 44 0 79-34 79-81 0-82-103-153-137-210Z" fill="url(#gold)"/>
+    <path d="M180 118l35 30 41-51 41 51 35-30 20 81H160l20-81Z" fill="url(#gold)"/>
+    <path d="M167 210h178" stroke="#fff0a2" stroke-width="9" stroke-linecap="round" opacity=".7"/>
+  </g>
+</svg>
