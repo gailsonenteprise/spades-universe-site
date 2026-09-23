@@ -101,13 +101,8 @@ p { color: var(--muted); }
 
 .showcase { background: linear-gradient(120deg,rgba(14,69,47,.48),rgba(0,0,0,.2)); }
 .showcase-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
-.tile-composition { position: relative; min-height: 430px; display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; padding: 30px; overflow: hidden; border: 1px solid var(--gold-line); border-radius: 28px; background: rgba(0,0,0,.28); box-shadow: var(--shadow); }
-.tile-composition::after { content: "♠"; position: absolute; right: -7%; top: -16%; color: rgba(212,175,55,.07); font-size: 18rem; line-height: 1; }
-.tile-composition article { position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: flex-end; min-height: 160px; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.04); }
-.tile-composition article:nth-child(2) { transform: translateY(28px); }
-.tile-composition article:nth-child(3) { transform: translateY(-18px); }
-.tile-composition span { color: white; font-size: 2.1rem; font-weight: 800; }
-.tile-composition small { color: var(--gold-light); font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; }
+.university-visual { position: relative; overflow: hidden; border: 1px solid var(--gold-line); border-radius: 28px; background: rgba(0,0,0,.28); box-shadow: var(--shadow); }
+.university-visual img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
 .check-list { display: grid; gap: 13px; margin: 28px 0 0; padding: 0; list-style: none; }
 .check-list li { padding-left: 30px; position: relative; color: rgba(255,255,255,.72); }
 .check-list li::before { content: "✓"; position: absolute; left: 0; color: #51dd92; font-weight: 900; }
@@ -217,9 +212,6 @@ p { color: var(--muted); }
   .hero .btn { width: 100%; }
   .trust-row { display: grid; gap: 10px; }
   .hero-brand-lockup { width: 100%; }
-  .tile-composition { min-height: 360px; padding: 18px; }
-  .tile-composition article { min-height: 140px; padding: 16px; }
-  .tile-composition span { font-size: 1.5rem; }
   .premium-card { padding: 28px; }
   .cta-panel { padding: 54px 22px; }
   .legal-hero { padding: 28px 22px; }
