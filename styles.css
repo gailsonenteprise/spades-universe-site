@@ -78,10 +78,11 @@ p { color: var(--muted); }
 .trust-row { display: flex; flex-wrap: wrap; gap: 15px 28px; margin: 30px 0 0; padding: 0; list-style: none; color: rgba(255,255,255,.58); font-size: .87rem; }
 .trust-row span { margin-right: 7px; color: #51dd92; font-weight: 900; }
 .hero-visual { position: relative; }
-.hero-visual::before { content: ""; position: absolute; inset: 10%; border-radius: 50%; background: rgba(52,211,153,.13); filter: blur(60px); }
-.logo-frame { position: relative; padding: 15px; overflow: hidden; border: 1px solid var(--gold-line); border-radius: 32px; background: rgba(0,0,0,.4); box-shadow: var(--shadow); backdrop-filter: blur(10px); }
-.logo-frame::after { content: ""; position: absolute; inset: 15px; border: 1px solid rgba(255,255,255,.08); border-radius: 22px; pointer-events: none; }
-.logo-frame img { width: 100%; aspect-ratio: 3 / 2; border-radius: 22px; object-fit: cover; }
+.hero-visual::before { content: ""; position: absolute; inset: 8%; border-radius: 50%; background: rgba(52,211,153,.15); filter: blur(70px); }
+.hero-brand-lockup { position: relative; display: flex; flex-direction: column; align-items: center; max-width: 570px; margin-inline: auto; text-align: center; }
+.hero-brand-lockup img { width: min(100%, 500px); height: auto; object-fit: contain; filter: drop-shadow(0 28px 50px rgba(0,0,0,.45)); }
+.hero-brand-line { margin: 24px 0 0; color: var(--gold-light); font-family: Cinzel,Georgia,serif; font-size: clamp(1.05rem,2vw,1.45rem); font-weight: 700; letter-spacing: .24em; text-transform: uppercase; }
+.hero-brand-subline { margin: 9px 0 0; color: rgba(255,255,255,.62); font-size: .82rem; letter-spacing: .1em; text-transform: uppercase; }
 
 .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
 .feature-card { min-width: 0; padding: 30px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.035); transition: transform .25s ease, border-color .25s ease, background .25s ease; }
@@ -217,8 +218,9 @@ p { color: var(--muted); }
   .hero-text { font-size: .98rem; }
   .hero .btn { width: 100%; }
   .trust-row { display: grid; gap: 10px; }
-  .logo-frame { padding: 8px; border-radius: 22px; }
-  .logo-frame img { border-radius: 15px; }
+  .hero-brand-lockup { max-width: 390px; }
+  .hero-brand-line { margin-top: 18px; letter-spacing: .16em; }
+  .hero-brand-subline { max-width: 310px; font-size: .7rem; }
   .tile-composition { min-height: 360px; padding: 18px; }
   .tile-composition article { min-height: 140px; padding: 16px; }
   .tile-composition span { font-size: 1.5rem; }
